@@ -1,3 +1,24 @@
 {% extends 'ex01/base.html' %}
 {% block title %}<title>Ex01 : Processus d'affichage d'une page statique.</title>{% endblock title %}
-{% block content %}hello world display{% endblock content %}
+{% block content %}
+
+    <h1>Understanding Django Web Framework</h1>
+    <p>
+        Django is a high-level Python web framework that enables rapid development of secure and maintainable web applications.
+        Let's briefly understand how Django processes a request and generates a static web page.
+    </p>
+    <h2>Request to Response Cycle:</h2>
+    <ol>
+        <li><strong>URL Configuration:</strong> When a user makes a request to a Django-powered website, Django's URL dispatcher routes the request to the appropriate view based on the URL patterns defined in the project's URL configuration.</li>
+        <li><strong>View Function:</strong> The view function receives the request and performs any necessary logic, such as querying the database or processing form data, but for a static page, this is not necessary.</li>
+        <li><strong>Template Rendering:</strong> Once the view function has processed the request, it typically renders a template. Templates are HTML files with embedded Django template language (DTL) syntax.</li>
+        <li><strong>HTTP Response:</strong> Finally, Django generates an HTTP response using the rendered template and returns it to the client's web browser, displaying the requested page.</li>
+    </ol>
+    <p>
+        This cycle repeats for each request received by the Django application, allowing for dynamic and interactive web pages to be served to users.
+    </p>
+    <p>
+        In summary, Django simplifies the process of building web applications by providing a clean and pragmatic design, robust tools, and comprehensive documentation.
+    </p>
+
+{% endblock content %}

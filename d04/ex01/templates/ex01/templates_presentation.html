@@ -4,4 +4,54 @@
 {% block style %}
 <link rel="stylesheet" type="text/css" href="{% static 'ex01/style2.css' %}">
 {% endblock style %}
-{% block content %}hello world templates{% endblock content %}
+{% block content %}
+{% verbatim %}
+    <h1>Understanding Django Template Engine</h1>
+    <p>
+        Django uses its own template engine to render dynamic content.
+        Let's explore some key features:
+    </p>
+    <h2>Blocs</h2>
+    <p>
+        Blocs allow you to define reusable sections in templates. They are defined using the <code>{% block %}</code> tag
+        and can be overridden in child templates using the <code>{% block %}</code> tag with the same name.
+    </p>
+    <h2>Boucles For</h2>
+    <p>
+        Django templates support <code>{% for %}</code> loops which iterate over lists or querysets.
+        For example:
+        <pre>
+            <code>
+{% for item in items %}
+    {{ item }}
+{% endfor %}
+            </code>
+        </pre>
+    </p>
+    <h2>Structures de Contrôle If</h2>
+    <p>
+        With <code>{% if %}</code> statements, you can add conditional logic to your templates.
+        For example:
+        <pre>
+            <code>
+{% if condition %}
+    Content to show when condition is true.
+{% else %}
+    Content to show when condition is false.
+{% endif %}
+            </code>
+        </pre>
+    </p>
+    <h2>Affichage des Variables Passées par Contexte</h2>
+    <p>
+        Variables passed by context are displayed using double curly braces <code>{{ variable }}</code>.
+        For example:
+        <pre>
+            <code>
+{{ user.username }}
+            </code>
+        </pre>
+    </p>
+{% endverbatim %}
+
+{% endblock content %}

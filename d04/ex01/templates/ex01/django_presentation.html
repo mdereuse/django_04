@@ -1,3 +1,42 @@
 {% extends 'ex01/base.html' %}
 {% block title %}<title>Ex01 : Django, framework web.</title>{% endblock title %}
-{% block content %}hello world django{% endblock content %}
+{% block content %}
+
+    <h1>Présentation détaillée de Django</h1>
+    <p>
+        Django est un framework web open-source écrit en Python, conçu pour simplifier et accélérer le développement d'applications web complexes et dynamiques. Créé par Adrian Holovaty et Simon Willison, Django a vu le jour à l'origine au sein de la rédaction de journaux en ligne du journal Lawrence Journal-World à Lawrence, Kansas, États-Unis.
+    </p>
+    <h2>Historique :</h2>
+    <p>
+        Le développement de Django a débuté en 2003 lorsque Holovaty et Willison ont cherché à rationaliser la création de sites web de journalisme. Ils ont créé un ensemble d'outils réutilisables pour répondre aux besoins de leur travail quotidien, ce qui a finalement conduit à la naissance de Django.
+    </p>
+    <p>
+        La première version publique de Django, la version 0.90, a été publiée en juillet 2005 sous une licence open-source BSD. Depuis lors, Django a connu une croissance exponentielle de sa popularité et de son adoption par la communauté des développeurs web.
+    </p>
+    <h2>Principes de conception :</h2>
+    <p>
+        Django est basé sur plusieurs principes de conception clés :
+    </p>
+    <ul>
+        <li><strong>DRY (Don't Repeat Yourself) :</strong> Django encourage la réutilisation du code et l'élimination de la redondance en favorisant une approche centrée sur la modularité et la réutilisabilité des composants.</li>
+        <li><strong>MVT (Modèle-Vue-Template) :</strong> Django suit l'architecture MVT, où le Modèle gère les données, la Vue gère la logique métier et le Template gère la présentation de l'interface utilisateur.</li>
+        <li><strong>Convention over Configuration :</strong> Django adopte des conventions sensées par défaut, permettant aux développeurs de se concentrer sur la logique métier plutôt que sur la configuration.</li>
+    </ul>
+    <h2>Caractéristiques principales :</h2>
+    <p>
+        Django offre un large éventail de fonctionnalités et de composants, dont certains sont :
+    </p>
+    <ul>
+        <li><strong>ORM (Object-Relational Mapping) :</strong> Django fournit un ORM puissant pour interagir avec la base de données, permettant aux développeurs de manipuler des données de manière abstraite sans avoir à écrire de requêtes SQL.</li>
+        <li><strong>Système d'administration automatique :</strong> Django propose un système d'administration automatique généré à partir des modèles de données, offrant une interface d'administration prête à l'emploi pour gérer les données du site.</li>
+        <li><strong>Sécurité intégrée :</strong> Django intègre des fonctionnalités de sécurité telles que la prévention des injections SQL, la protection contre les attaques CSRF (Cross-Site Request Forgery) et la gestion des autorisations utilisateur.</li>
+        <li><strong>Extensibilité :</strong> Django est hautement extensible grâce à son architecture modulaire et à sa vaste collection de packages et d'extensions tierces.</li>
+    </ul>
+    <p>
+        Aujourd'hui, Django est largement utilisé par des entreprises et des organisations du monde entier pour développer une gamme diversifiée d'applications web, allant des sites d'information et de commerce électronique aux plateformes de médias sociaux et aux applications d'entreprise.
+    </p>
+    <p>
+        En conclusion, Django est un framework web mature, évolutif et robuste qui continue d'évoluer grâce à sa communauté active et à son engagement envers l'excellence technique.
+    </p>
+
+{% endblock content %}
