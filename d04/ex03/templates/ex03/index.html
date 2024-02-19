@@ -1,1 +1,38 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<style>
+			th, td{
+				height: 40px;
+				width: 80px;
+			}
+		</style>
+		<title>Ex03</title>
+	</head>
+	<body>
+		  <h1>Fifty shades of bic</h1>
+		  <table>
+			  <thead>
+				<tr>
+					<th>black</th>
+					<th>red</th>
+					<th>blue</th>
+					<th>green</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  	{% for black, red, blue, green in color_range %}
+				<tr>
+					<td style="background-color: {{ black }};"></td>
+					<td style="background-color: {{ red }};"></td>
+					<td style="background-color: {{ blue }};"></td>
+					<td style="background-color: {{ green }};"></td>
+				</tr>
+			  	{% endfor %}
+			  </tbody>
+		  </table>
+	</body>
+</html>
