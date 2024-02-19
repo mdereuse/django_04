@@ -133,13 +133,13 @@ LOGGING = {
     "disable_existing_loggers": False,
     "formatters": {
         "verbose": {
-            "format": "{message} {asctime}",
+            "format": "{asctime} {message}",
             "style": "{",
         }
     },
     "handlers": {
         "file": {
-            "level": "DEBUG",
+            "level": "INFO",
             "class": "logging.FileHandler",
             "filename": LOG_FILEPATH,
             "formatter": "verbose"

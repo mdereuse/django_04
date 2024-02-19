@@ -16,5 +16,4 @@ def index(request):
     context = {
         "color_range": zip(black_color_range, red_color_range, blue_color_range, green_color_range)
     }
-    print(context)
     return render(request, 'ex03/index.html', context)

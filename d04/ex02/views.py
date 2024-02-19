@@ -12,7 +12,7 @@ def index(request):
         form = forms.Entry(request.POST)
         if form.is_valid():
             logger.info(form.cleaned_data['entry'])
-        return redirect('index')
+        return redirect('index_ex02')
     form = forms.Entry()
     try:
         with open(settings.LOG_FILEPATH, "r") as f:
